@@ -8,7 +8,7 @@
   import { computed, defineComponent, unref, ref } from 'vue';
   import { Layout } from 'ant-design-vue';
 
-  import { DOC_URL, GITLAB_URL } from '/@/settings/siteSetting';
+  import { DOC_URL, GITHUB_URL } from '/@/settings/siteSetting';
   import { openWindow } from '/@/utils';
 
   import { useRootSetting } from '/@/hooks/setting/useRootSetting';
@@ -41,7 +41,7 @@
         getShowLayoutFooter,
         prefixCls,
         DOC_URL,
-        GITLAB_URL,
+        GITHUB_URL,
         openWindow,
         footerRef,
       };

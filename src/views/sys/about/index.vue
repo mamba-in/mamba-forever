@@ -3,7 +3,7 @@
     <template #headerContent>
       <div class="flex justify-between items-center">
         <span class="flex-1">
-          <a :href="GITLAB_URL" target="_blank">{{ name }}</a>
+          <a :href="GITHUB_URL" target="_blank">{{ name }}</a>
           基于Vue3.0、Vite、 Ant-Design-Vue 、TypeScript等最新技术栈开发。
         </span>
       </div>
@@ -18,7 +18,7 @@
   import { Tag } from 'ant-design-vue';
   import { PageWrapper } from '/@/components/Page';
   import { Description, DescItem, useDescription } from '/@/components/Description/index';
-  import { GITLAB_URL, DOC_URL } from '/@/settings/siteSetting';
+  import { GITHUB_URL, SITE_URL, DOC_URL } from '/@/settings/siteSetting';
 
   const { pkg, lastBuildTime } = __APP_INFO__;
 
@@ -47,9 +47,14 @@
       render: commonLinkRender('文档地址'),
     },
     {
-      label: 'Gitlab',
-      field: 'gitlab',
-      render: commonLinkRender('Gitlab'),
+      label: '预览地址',
+      field: 'preview',
+      render: commonLinkRender('预览地址'),
+    },
+    {
+      label: 'Github',
+      field: 'github',
+      render: commonLinkRender('Github'),
     },
   ];
 
@@ -57,7 +62,8 @@
     version,
     lastBuildTime,
     doc: DOC_URL,
-    gitlab: GITLAB_URL,
+    preview: SITE_URL,
+    github: GITHUB_URL,
   };
 
   Object.keys(dependencies).forEach((key) => {

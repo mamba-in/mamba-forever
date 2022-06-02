@@ -19,3 +19,8 @@ git commit -m 'deploy gh-pages'
 git push -f git@github.com:mamba-in/mamba-forever.git master:gh-pages
 
 cd -
+
+git add -A
+git commit -m 'feat: update project template'
+git push
+echo '✨ deploy finished'
