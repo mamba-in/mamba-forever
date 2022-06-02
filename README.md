@@ -4,7 +4,7 @@
 
 ## 简介
 
-Mamba Forever,使用了最新的`vue3`,`vite2`,`TypeScript`等主流技术开发。
+[Mamba Forever](https://mamba-in.github.io/mamba-forever/),使用了最新的`vue3`,`vite2`,`TypeScript`等主流技术开发。
 
 ## 特性
 
@@ -21,9 +21,9 @@ Mamba Forever,使用了最新的`vue3`,`vite2`,`TypeScript`等主流技术开发
 
 ## TODO
 
+- [x] [文档](https://mamba-in.github.io/cloud-notes/)
 - [x] Login
 - [ ] Register
-- [ ] 文档
 - [ ] ...
 
 ## 准备
