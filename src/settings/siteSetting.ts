@@ -1,4 +1,4 @@
-// gitlab repo url
+// github repo url
 export const GITHUB_URL = 'https://github.com/mamba-in/mamba-forever';
 
 // transport-in-future-doc
