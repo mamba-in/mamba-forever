@@ -25,9 +25,9 @@ function create_tag {
   DATE=$(date +%Y/%m/%d/%H/%M);
   read -p "请输入标签名称:" TAG_NAME;
   read -p "请输入该标签的描述信息:" TAG_MESSAGE;
-  git tag -a $TAG_NAME -m $"📅$DATE \n $TAG_NAME \n $TAG_MESSAGE";
+  git tag -a $TAG_NAME -m "📅$DATE" -m "$TAG_NAME" -m "$TAG_MESSAGE";
   git push origin $TAG_NAME;
-  printf "📅$DATE \n $TAG_NAME \n $TAG_MESSAGE";
+  printf "📅$DATE \n $TAG_NAME \n $TAG_MESSAGE \n";
   echo '标签创建完成✅';
 }
 
