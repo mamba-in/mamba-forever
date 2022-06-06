@@ -22,12 +22,12 @@ set -e
 
 function create_tag {
   echo '创建标签📍:'
-  DATE=$(date +%Y/%m/%d/%H/%M);
+  DATE=$(date +%Y/%m/%d) $(date +%H):$(date +%M);
   read -p "请输入标签名称:" TAG_NAME;
   read -p "请输入该标签的描述信息:" TAG_MESSAGE;
-  git tag -a $TAG_NAME -m "📅$DATE" -m "$TAG_NAME" -m "$TAG_MESSAGE";
+  git tag -a $TAG_NAME -m "📅Date:$DATE" -m "🔖Tag:$TAG_NAME" -m "🖋️Message:$TAG_MESSAGE";
   git push origin $TAG_NAME;
-  printf "📅$DATE \n $TAG_NAME \n $TAG_MESSAGE \n";
+  printf "🗓️Date:$DATE \n 🔖Tag:$TAG_NAME \n 🖋️Message:$TAG_MESSAGE \n";
   echo '标签创建完成✅';
 }
 
